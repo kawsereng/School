@@ -1,6 +1,8 @@
 import { Banner2 } from "./Components/Banner2";
-import Container from "./Container/Container";
+import Notice from "./notice/page";
+// import Container from "./Container/Container";
 import HeroSlider from "./Swiper/HeroSlider";
+import TeachersSection from "./teacher/page";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
           <div className="">
             <HeroSlider/>
             <Banner2/>
+            <Notice/>
+            <TeachersSection/>
 
 
           </div>

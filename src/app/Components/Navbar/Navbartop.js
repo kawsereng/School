@@ -38,7 +38,7 @@ export const Navbartop = () => {
               href="tel:+8801700000000"
             >
               <TbPhoneCall />
-              <span>+880 1700-000000</span>
+              <span className='hidden sm:inline'>+880 1700-000000</span>
             </Link>
           </div>
 

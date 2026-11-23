@@ -1,0 +1,142 @@
+
+.notice-section {
+  padding: 70px 20px;
+  background: #f5f8fc;
+  font-family: Arial, sans-serif;
+}
+
+.notice-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.notice-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.notice-heading span {
+  color: #0d9488;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.notice-heading h2 {
+  font-size: 36px;
+  color: #14213d;
+  margin: 12px 0;
+}
+
+.notice-heading p {
+  color: #64748b;
+}
+
+.notice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.notice-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  border-left: 5px solid #0d9488;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.notice-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.09);
+}
+
+.notice-date {
+  min-width: 75px;
+  height: 80px;
+  background: #e0f2f1;
+  color: #0d9488;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.notice-date span {
+  font-size: 25px;
+}
+
+.notice-date small {
+  font-size: 11px;
+}
+
+.notice-content {
+  flex: 1;
+}
+
+.notice-category {
+  color: #0d9488;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.notice-content h3 {
+  color: #14213d;
+  margin: 8px 0;
+  font-size: 19px;
+}
+
+.notice-content p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.notice-btn,
+.notice-footer button {
+  background: #0d9488;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.notice-btn:hover,
+.notice-footer button:hover {
+  background: #0f766e;
+}
+
+.notice-footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 650px) {
+  .notice-card {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .notice-content {
+    min-width: 100%;
+    order: 2;
+  }
+
+  .notice-btn {
+    order: 3;
+  }
+
+  .notice-heading h2 {
+    font-size: 28px;
+  }
+}
